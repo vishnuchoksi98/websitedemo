@@ -28,8 +28,8 @@
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Insert title here</title>
 <style>
 .textcolor {
 	color: lightgrey;

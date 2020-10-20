@@ -61,6 +61,8 @@
 
 </head>
 <body onload="getdata()">
+	<jsp:include page="header.jsp" />
+
 	<div class="container">
 		<div class="row">
 			<div class="pordSlider space col-xs-12 col-sm-6 zoom-box">

@@ -8,7 +8,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Insert title here</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -33,40 +35,42 @@
 </style>
 </head>
 <body>
-	<div class="d-flex justify-content-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<!-- <div class="d-flex justify-content-center"> -->
 
-		<form:form action="login" method="post" name="login"
-			modelAttribute="login">
+				<form:form action="login" method="post" name="login"
+					modelAttribute="login">
 
-			<div class="form-group">
-				<label for="username">Username</label>
-				<form:input type="text" class="form-control" path="username"
-					placeholder="Please enter your username as email id " />
-				<form:errors path="username" class="error" />
+					<div class="form-group">
+						<label for="username">Username</label>
+						<form:input type="text" class="form-control" path="username"
+							placeholder="Please enter your username as email id " />
+						<form:errors path="username" class="error" />
+					</div>
+
+					<div class="form-group">
+						<label for="Password">Password</label>
+						<form:input type="password" class="form-control" path="password" />
+						<form:errors path="password" class="error" />
+					</div>
+
+					<div class="form-group error">
+						<c:out value="${message}"></c:out>
+					</div>
+
+					<br>
+					<button type="submit" class="btn btn-primary">Submit</button>
+					<br>New Member then register here <a
+						href="<%=request.getContextPath()%>/register">Register</a>
+					<br>Forget Password <a
+						href="<%=request.getContextPath()%>/forgetpassword">Forgot
+						Password</a>
+				</form:form>
 			</div>
-
-			<div class="form-group">
-				<label for="Password">Password</label>
-				<form:input type="password" class="form-control" path="password" />
-				<form:errors path="password" class="error" />
-			</div>
-
-			<div class="form-group error">
-				<c:out value="${message}"></c:out>
-			</div>
-
-			<br>
-			<button type="submit" class="btn btn-primary">Submit</button>
-			<br>New Member then register here <a
-				href="<%=request.getContextPath()%>/register">Register</a>
-			<br>Forget Password <a
-				href="<%=request.getContextPath()%>/forgetpassword">Forgot
-				Password</a>
-		</form:form>
+		</div>
 	</div>
-
-
-
-
+	<!--  	</div>-->
 </body>
 </html>

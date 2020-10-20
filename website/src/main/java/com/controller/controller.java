@@ -374,6 +374,15 @@ public class controller {
 		
 		return "redirect:/shoppingcart";
 	}
+	
+	@RequestMapping("/shoppingcartcounter")
+	@ResponseBody
+	public int shoppingcartcounter(Model m ,HttpSession session) {
+		List<cartbean> cart = (List<cartbean>) session.getAttribute("cart");
+		int i=cart.size();
+		System.out.println("cart size:"+i);
+		return i;
+	}
 //	@RequestMapping("/cart")
 //	public String cart(Model m ,HttpSession session) {
 //		//m.addAttribute("login", new loginbean());

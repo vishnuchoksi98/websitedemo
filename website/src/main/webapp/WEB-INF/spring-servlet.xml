@@ -33,7 +33,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 
-	<!-- <bean id="ds"
+	 <bean id="ds"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver"></property>
@@ -41,9 +41,9 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
 			value="jdbc:mysql://localhost:3306/student"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="root"></property>
-	</bean> -->
+	</bean> 
 	
-	<bean id="ds"
+	<!-- <bean id="ds"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName"
 			value="org.postgresql.Driver"></property>
@@ -52,7 +52,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
 		<property name="username" value="frcyijtrnpulnl"></property>
 		<property name="password" value="c016b50878f9c9dac53aab2cc809f81b3fc3806648697761bee4635ff1d1b87a"></property>
 	</bean>
-
+ -->
 	<bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">
 		<property name="dataSource" ref="ds"></property>
 	</bean>
